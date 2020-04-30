@@ -1,0 +1,16 @@
+{
+  "name": "building-rest-api-from-scratch",
+  "version": "1.0.0",
+  "description": "Sourced from Udemy:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.1"
+  }
+}
