@@ -103,10 +103,24 @@ module.exports = {
 
             //if everything is good send the msg the job is updated successfully
             return res.status(200).json({});
-        })
+        });
        
 
 
+
+    },
+    delete(req,res){
+        //get the id from req params
+        let id = req.params.id;
+        //call findByIdAndRemove method
+        JobModel.findByIdAndRemove(id,err=> {
+            //if we encounter an error then send 500 status with error
+            if (err){
+                return res.status(500).send({err});
+            }
+        });
+        //if everything is good, send the msg job has deleted
+        return res.status(200).json({msg:`Job is deleted with id:${id}`});
 
     }
 } 
