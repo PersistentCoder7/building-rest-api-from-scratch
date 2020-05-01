@@ -1,6 +1,6 @@
 # NodeJs: Building REST APIs from scratch
 
-Sourced from Udemy:
+Sourced from Udemy: [NodeJS: Building REST APIs from scratch](https://udemy.com/course/draft/1344260/learn/lecture/8120908#overview)
 
 ## Install the following
 
@@ -127,3 +127,7 @@ Sourced from Udemy:
     * Create the `job.routes.js` under it and map the router actions to the `jobs.controller.js` actions.
 
     * Configure `app.js` router mapping by configuring the middleware to connect with the routes defined earlier.  
+
+6. Added the functionality to add, update and delete jobs based on the routes configured. Uses the MongoDB to persist the jobs data. Also included a simple configuration file.
+
+7. Used nodemon from rapid application development.
